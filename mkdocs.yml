@@ -8,6 +8,9 @@ theme:
   name: material
   language: en
 
+nav:
+  - Welcome to MkDocs: index.md
+
 plugins:
   - search
   - i18n:
@@ -18,3 +21,6 @@ plugins:
           name: English
         zh:
           name: 中文
+      nav_translations:
+        zh:
+          Welcome to MkDocs: 欢迎使用 MkDocs
