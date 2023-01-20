@@ -64,9 +64,9 @@ jobs:
         uses: marvinpinto/action-automatic-releases@latest
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          title: "Generated PDF - ${{ github.event.repository.name }}-${{ env.SHORT_SHA }} (${{ env.GITHUB_RUN_ID }}: ${{ env.GITHUB_RUN_NUMBER }}))"
+          title: "Generated PDF - ${{ github.event.repository.name }}-${{ env.SHORT_SHA }}))"
           files: |
             pdf/${{ github.event.repository.name }}-en-${{ env.SHORT_SHA }}.pdf
             pdf/${{ github.event.repository.name }}-zh-${{ env.SHORT_SHA }}.pdf
-          automatic_release_tag: "Generated-PDF-${{ github.event.repository.name }}-${{ env.SHORT_SHA }}-${{ env.GITHUB_RUN_ID }}-${{ env.GITHUB_RUN_NUMBER }}"
+          automatic_release_tag: "Generated-PDF-${{ github.event.repository.name }}-${{ env.SHORT_SHA }}"
           prerelease: false
