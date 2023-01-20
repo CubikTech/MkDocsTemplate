@@ -16,6 +16,17 @@ nav:
 
 plugins:
   - search
+  - i18n:
+      default_language: en
+      material_alternate: true
+      languages:
+        en:
+          name: English
+        zh:
+          name: 中文
+      nav_translations:
+        zh:
+          Welcome to MkDocs: 欢迎使用 MkDocs
   - with-pdf:
       #author: Contributors
       #copyright: Licensed under Creative Commons Attribution-NonCommercial 4.0 International License.
@@ -52,14 +63,3 @@ plugins:
       #debug_html: true
       #show_anchors: true
       #verbose: true
-  - i18n:
-      default_language: en
-      material_alternate: true
-      languages:
-        en:
-          name: English
-        zh:
-          name: 中文
-      nav_translations:
-        zh:
-          Welcome to MkDocs: 欢迎使用 MkDocs
