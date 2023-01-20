@@ -25,6 +25,10 @@ jobs:
       - name: Install Homebrew dependencies
         run: |
           brew install weasyprint
+      - name: Install font
+        run: |
+          brew tap homebrew/cask-fonts
+          brew install --cask font-noto-serif-cjk
       - name: Setup Python ${{ matrix.python }}
         uses: actions/setup-python@v4
         with:
