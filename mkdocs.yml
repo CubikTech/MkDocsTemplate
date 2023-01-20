@@ -1,0 +1,20 @@
+site_name: My Docs
+docs_dir: 'docs'
+repo_url: https://github.com/CubikTech/MkDocsTemplate
+repo_name: CubikTech/MkDocsTemplate
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: en
+
+plugins:
+  - search
+  - i18n:
+      default_language: en
+      material_alternate: true
+      languages:
+        en:
+          name: English
+        zh:
+          name: 中文
