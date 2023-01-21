@@ -5,7 +5,7 @@
 <p align="center">
   <b>多语言 MkDocs 文档模板</b>
   <br/>
-  本项目可以直接部署至 <a herf="https://readthedocs.org">https://readthedocs.org</a> 或通过部署 <code>gh-pages</code> 分支内的 HTML 文件来部署至 <a href="https://vercel.com">Vercel</a>。
+  本项目可以直接部署至 <a href="https://readthedocs.org">https://readthedocs.org</a> 或通过部署 <code>gh-pages</code> 分支内的 HTML 文件来部署至 <a href="https://vercel.com">Vercel</a>。
 </p>
 
 <p align="center">
