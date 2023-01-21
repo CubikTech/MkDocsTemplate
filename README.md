@@ -5,7 +5,7 @@
 <p align="center"> 
   <b>Template for multi-lang MkDocs documentation</b>
   <br/>
-  This project can be deployed to <a herf="https://readthedocs.org">https://readthedocs.org</a> directly or <a href="https://vercel.com">Vercel</a> by deploying the HTML files in the `gh-pages` branch.
+  This project can be deployed to <a herf="https://readthedocs.org">https://readthedocs.org</a> directly or <a href="https://vercel.com">Vercel</a> by deploying the HTML files in the <code>gh-pages</code> branch.
 </p>
 
 <p align="center">
