@@ -1,4 +1,4 @@
-name: Build PDF version for MkDocs Documentation
+name: Build PDF version and deploy to GitHub Pages
 on:
   push:
     branches:
@@ -70,3 +70,6 @@ jobs:
             pdf/${{ github.event.repository.name }}-zh-${{ env.SHORT_SHA }}.pdf
           automatic_release_tag: "Generated-PDF-${{ github.event.repository.name }}-${{ env.SHORT_SHA }}"
           prerelease: false
+      - name: Deploy to GitHub Pages
+        run: |
+          mkdocs gh-deploy --force
