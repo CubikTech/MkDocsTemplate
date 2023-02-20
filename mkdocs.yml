@@ -10,10 +10,48 @@ copyright: Licensed under Creative Commons Attribution-NonCommercial 4.0 Interna
 theme:
   name: material
   language: en
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      accent: red
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+  include_search_page: false
+  search_index_only: true
+  features:
+    - navigation.tabs
+    - navigation.instant
 
+# Customization
+extra_css:
+  - '_static/css/extra.css?v=14'
+  
+# Extensions
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true 
+  - tables
+  - footnotes
+
+# Navigation
 nav:
   - Welcome to MkDocs: index.md
 
+# Plugins
 plugins:
   - search
   - i18n:
