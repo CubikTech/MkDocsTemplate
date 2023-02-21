@@ -9,7 +9,6 @@ copyright: Licensed under Creative Commons Attribution-NonCommercial 4.0 Interna
 
 theme:
   name: material
-  language: en
   palette:
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
@@ -31,7 +30,6 @@ theme:
   search_index_only: true
   features:
     - navigation.tabs
-    - navigation.instant
 
 # Customization
 extra_css:
@@ -56,12 +54,14 @@ plugins:
   - search
   - i18n:
       default_language: en
-      material_alternate: true
+      docs_structure: suffix
       languages:
         en:
           name: English
+          build: false
         zh:
           name: 中文
+          build: true
       nav_translations:
         zh:
           Welcome to MkDocs: 欢迎使用 MkDocs
