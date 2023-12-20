@@ -54,7 +54,7 @@ jobs:
           mv site/en/pdf/document.pdf pdf/${{ github.event.repository.name }}-en-${{ env.SHORT_SHA }}.pdf
           mv site/zh/pdf/document.pdf pdf/${{ github.event.repository.name }}-zh-${{ env.SHORT_SHA }}.pdf
       - name: Upload PDF
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: ${{ github.event.repository.name }}-${{ env.SHORT_SHA }}-Generated-PDF
           path: pdf
