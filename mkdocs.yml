@@ -53,14 +53,16 @@ nav:
 plugins:
   - search
   - i18n:
-      default_language: en
       docs_structure: suffix
       languages:
-        en:
+        - locale: en
           name: English
-          build: false
-        zh:
+          default: true
+          site_name: Multi-Lang MkDocs Documentation Site
+          build: true
+        - locale: zh
           name: 中文
+          site_name: 多语言 MkDocs 文档模板
           build: true
       nav_translations:
         zh:
